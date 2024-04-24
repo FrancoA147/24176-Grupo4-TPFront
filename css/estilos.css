@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-image {
+    width: 50%; /* Ajusta este valor según la anchura deseada, 100% asegura que la imagen cubra el ancho del contenedor */
+    height: auto; /* Ajusta este valor para mantener la proporción de aspecto */
+    max-width: 200px; /* Máxima anchura */
+    max-height: 100px; /* Máxima altura */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse, recortando el exceso si es necesario */
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Estilos para tablets */
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    header img {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para móviles */
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
