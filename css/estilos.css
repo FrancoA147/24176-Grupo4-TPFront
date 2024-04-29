@@ -5,7 +5,8 @@ body {
     color: #333;
 }
 
-header, footer {
+header,
+footer {
     padding: 1em;
     color: white;
     background-color: black;
@@ -27,26 +28,74 @@ nav ul li {
     height: auto;
 }
 
-.carousel-image {
-    width: 50%; /* Ajusta este valor según la anchura deseada, 100% asegura que la imagen cubra el ancho del contenedor */
-    height: auto; /* Ajusta este valor para mantener la proporción de aspecto */
-    max-width: 200px; /* Máxima anchura */
-    max-height: 100px; /* Máxima altura */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse, recortando el exceso si es necesario */
+.carousel-item {
+    width: 100%;
+    /* Ajusta este valor según la anchura deseada, 100% asegura que la imagen cubra el ancho del contenedor */
+    height: auto;
+    /* Ajusta este valor para mantener la proporción de aspecto */
+    /*max-width: 200px;  Máxima anchura */
+    /*max-height: 100px;  Máxima altura */
+
+    object-fit: cover;
+    /* Asegura que la imagen cubra el área sin distorsionarse, recortando el exceso si es necesario */
 }
 
+.flex-container {
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+#imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: space-evenly;
+    height: 100%;
+    row-gap: 20px;
+    align-content: space-around;
+  }
+    .imagen {
+        width: 250;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .imagencard {
+        width: 100%;
+      }  
+      @media (max-width: 800px) {
+        .imagen {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      @media (max-width: 600px) {
+        .imagen {
+          flex: 100%;
+          max-width: 100%;}
+        }
+    
+
+
 @media only screen and (max-width: 1024px) {
+
     /* Estilos para tablets */
-    header, footer {
+    header,
+    footer {
         flex-direction: column;
         text-align: center;
     }
+
     header img {
         margin-bottom: 20px;
     }
 }
 
 @media only screen and (max-width: 768px) {
+
     /* Estilos para móviles */
     .menu-container {
         grid-template-columns: 1fr;
