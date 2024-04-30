@@ -24,7 +24,7 @@ nav ul li {
 }
 
 .carousel-inner img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -34,17 +34,19 @@ nav ul li {
     height: auto;
     /* Ajusta este valor para mantener la proporción de aspecto */
     /*max-width: 200px;  Máxima anchura */
-    /*max-height: 100px;  Máxima altura */
+    /*max-height: 1000px;  Máxima altura */
 
-    object-fit: cover;
+    object-fit:none;
     /* Asegura que la imagen cubra el área sin distorsionarse, recortando el exceso si es necesario */
 }
 
-.flex-container {
+.carousel-inner {
     display: flex;
     background-color: black;
+    color: rgb(201, 137, 18);
     flex-wrap: wrap;
     padding: 0 4px;
+    text-align: center;
 }
 
 .imagenes {
@@ -52,34 +54,36 @@ nav ul li {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 4px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     row-gap: 20px;
     align-content: space-around;
-    box-sizing: border-box;
+    text-align: center;
 }
 
-.imagen {
-    width: 20%;
-    
+.imagen img {
+    width: 200px;
+    height: 300px;
     padding: 10px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 10px;
+    object-fit: contain;
+    background-color: rgb(231, 201, 145) ;
+    
 }
 
 .imagencard {
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    border-radius: 2px solid red;
+   
+    width: 10%;
+    border-radius: 10%;
+    
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .imagen {
-        flex: 50%;
-        max-width: 30%;
+        flex: 100%;
+        max-width: 50%;
     }
 }
 
