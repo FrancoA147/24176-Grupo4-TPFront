@@ -31,7 +31,22 @@ document.querySelector("header").innerHTML = `
 `*/
 document.querySelector("footer").innerHTML=`
 <br>
+<p>Seguinos en nuestras redes.</p>
+<nav>
+    <a href=https://www.facebook.com target="_blank">
+        <img src="./imagenes/facebook.png" alt="logo de facebook" width="30px">
+    </a>
+    <a href=https://www.instagram.com target="_blank">
+        <img src="./imagenes/instagram.png" alt="logo de instagram" width="30px"></a>
+    <a href="https://web.whatsapp.com" target="_blank">
+        <img src="./imagenes/wsp.png" alt="logo de whatsapp" width="30px">
+    </a>
+</nav>
+<br>
+<a href="index.html">Home</a>
+<br>
+<br>
 <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
-<a href="index.html">Inicio</a>
+
 <br>
 `

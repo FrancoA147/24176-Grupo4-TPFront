@@ -55,42 +55,43 @@ nav ul li {
     flex-wrap: wrap;
     padding: 0 4px;
     justify-content: space-around;
-
     row-gap: 20px;
     align-content: space-around;
     text-align: center;
 }
-
-.imagen img {
+.imagen {
     width: 200px;
-    height: 300px;
+    height: auto;
     padding: 10px;
     border: 2px solid black;
     border-radius: 10px;
     margin-top: 10px;
-    object-fit: contain;
+    object-fit:contain;
     background-color: rgb(231, 201, 145) ;
-    
+ 
+        
 }
+
 
 .imagencard {
    
-    width: 10%;
-    border-radius: 10%;
+    width: 100%;
+    border-radius: 10px;
+    
     
 }
 
 @media (max-width: 800px) {
     .imagen {
         flex: 100%;
-        max-width: 50%;
+        max-width: 40%;
     }
 }
 
 @media (max-width: 600px) {
     .imagen {
         flex: 100%;
-        max-width: 80%;
+        max-width: 50%;
     }
 }
 
