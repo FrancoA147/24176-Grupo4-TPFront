@@ -6,7 +6,7 @@
 });*/
 
 document.querySelector("header").innerHTML = `
-<div><img src="./imagenes/logo.jpg" alt="Logo del Restaurante"></div>
+<div><img id="logorest" src="./imagenes/logo.jpg" alt="Logo del Restaurante"></div>
 <nav>
     <ul style="list-style-type: none;">
         <li><a href="index.html">Inicio</a></li>
@@ -14,10 +14,10 @@ document.querySelector("header").innerHTML = `
         <li><a href="bebidas.html">Bebidas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="pedidos.html">Pedidos</a></li>
-        <li><a href="index.html #Nosotros">Acerca de</a></li>
+        <li><a href="index.html#Nosotros">Acerca de</a></li>
     </ul>
 </nav>
-<div>Teléfono: +1 234 567 8900</div>
+<div id="tel">Teléfono: +1 234 567 8900</div>
 `
 
 /*document.querySelector("header").innerHTML=`
@@ -26,7 +26,7 @@ document.querySelector("header").innerHTML = `
                 <a href="index.html">Home</a>
                 <a href="registro.html">Registro</a>
                 <a href="sucursales.html">Sucursales</a>
-                <a href="acercade.html">Acerca de</a>
+                <a href="index.html #Nosotros">Acerca de</a>
             </nav>
 `*/
 document.querySelector("footer").innerHTML=`
@@ -43,7 +43,7 @@ document.querySelector("footer").innerHTML=`
     </a>
 </nav>
 <br>
-<a href="index.html">Home</a>
+<a id="home" href="index.html">Inicio</a>
 <br>
 <br>
 <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>

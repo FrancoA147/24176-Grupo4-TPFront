@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #d3d3d3;
 }
 
 header,
@@ -14,8 +15,31 @@ footer {
     text-align: center;
 }
 
+#logorest {
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    box-shadow: 0px 5px 20px 10px #d3d3d3;
+}
+
+nav a {
+    color: rgb(59,55,56);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(201, 137, 18);
+    text-decoration: none;
+}
+
 nav ul {
+    text-align: center;
     padding: 0;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    width: 37%;
+    margin: auto;
+    box-shadow: 0px 10px 20px -5px white;
 }
 
 nav ul li {
@@ -23,19 +47,28 @@ nav ul li {
     margin-right: 10px;
 }
 
+#tel {
+    color: #d3d3d3;
+    margin-top: 1%;
+}
+
 .carousel-inner img {
-    width: 50%;
-    height: auto;
+    /*width: 50%;
+    height: auto;*/
+    border-radius: 10px;
+    /*max-height: 300px;*/
+    height: 70%;
+    width: auto;
+    max-width:max-content;
 }
 
 .carousel-item {
     width: 100%;
     /* Ajusta este valor según la anchura deseada, 100% asegura que la imagen cubra el ancho del contenedor */
-    height: auto;
+    height: 400px;
     /* Ajusta este valor para mantener la proporción de aspecto */
     /*max-width: 200px;  Máxima anchura */
     /*max-height: 1000px;  Máxima altura */
-
     object-fit:none;
     /* Asegura que la imagen cubra el área sin distorsionarse, recortando el exceso si es necesario */
 }
@@ -49,6 +82,24 @@ nav ul li {
     text-align: center;
 }
 
+.carousel-control-prev {
+    height: 60%;
+}
+
+.carousel-control-next {
+    height: 60%;
+}
+
+.carousel .carousel-indicators li {  background-color: gray; }
+.carousel .carousel-indicators li.active { background-color:rgb(201, 137, 18); }
+
+
+#carouselExampleIndicators {
+    background-color: black;
+}
+
+
+
 .imagenes {
     display: flex;
     flex-direction: row;
@@ -59,6 +110,7 @@ nav ul li {
     align-content: space-around;
     text-align: center;
 }
+
 .imagen {
     width: 200px;
     height: auto;
@@ -68,17 +120,11 @@ nav ul li {
     margin-top: 10px;
     object-fit:contain;
     background-color: rgb(231, 201, 145) ;
- 
-        
 }
 
-
 .imagencard {
-   
     width: 100%;
     border-radius: 10px;
-    
-    
 }
 
 @media (max-width: 800px) {
@@ -86,12 +132,30 @@ nav ul li {
         flex: 100%;
         max-width: 40%;
     }
+    nav ul {
+        text-align: center;
+        padding: 0;
+        background-color: #d3d3d3;
+        border-radius: 5px;
+        width: 100%;
+        margin: auto;
+        box-shadow: 0px 10px 20px -5px white;
+    }
 }
 
 @media (max-width: 600px) {
     .imagen {
         flex: 100%;
         max-width: 50%;
+    }
+    nav ul {
+        text-align: center;
+        padding: 0;
+        background-color: #d3d3d3;
+        border-radius: 5px;
+        width: 100%;
+        margin: auto;
+        box-shadow: 0px 10px 20px -5px white;
     }
 }
 
@@ -120,4 +184,39 @@ nav ul li {
     .menu-container {
         grid-template-columns: 1fr;
     }
+}
+
+#contacto {
+    background-color: #d3d3d3;
+}
+
+#labCont {
+    text-align: center;
+}
+
+#cont {
+    text-align: center;
+}
+
+#radios {
+    margin-left: 45%;
+    text-align: left;
+}
+
+#forpag {
+    text-decoration: underline;
+}
+
+#btnEnviar {
+    background-color: #333;
+    color: #d3d3d3;
+    padding: 0.5%;
+    width: 20%;
+    border-radius: 10px;
+}
+
+#home {
+    color: #d3d3d3;
+    font-size: 20px;
+    text-decoration: underline;
 }

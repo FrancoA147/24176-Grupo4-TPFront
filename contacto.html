@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="./imagenes/favicon.png">
     <title>Contacto</title>
 </head>
+
 <body>
     <header>
         <br>
@@ -13,31 +17,37 @@
     </header>
     </header>
 
-    <h1>Contacto</h1>
-    <form name="formularioContacto" onsubmit="return validarFormulario()">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required><br>
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required><br>
-        <label for="celular">Celular:</label>
-        <input type="text" id="celular" name="celular" required><br>
-        <label for="medio_contacto">Medio de contacto preferido:</label>
-        <input type="checkbox" id="medio_contacto" name="medio_contacto"><br>
-        <label for="forma_pago">Forma de pago:</label>
-        <input type="radio" id="tarjeta" name="forma_pago" value="tarjeta" required> Tarjeta de crédito<br>
-        <input type="radio" id="efectivo" name="forma_pago" value="efectivo" required> Efectivo<br>
-        <input type="radio" id="transferencia" name="forma_pago" value="transferencia" required> Transferencia<br>
-        <input type="radio" id="otro" name="forma_pago" value="otro" required> Otro<br>
-        <input type="submit" value="Enviar">
-    </form>
+    <div id="contacto">
+        <h1 id="labCont">Contacto</h1>
+        <form id="cont" name="formularioContacto" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+            <label for="correo">⠀Correo:</label>
+            <input type="email" id="correo" name="correo" required><br>
+            <label for="celular">⠀Celular:</label>
+            <input type="text" id="celular" name="celular" required><br>
+            <label for="medio_contacto">Medio de contacto preferido:</label>
+            <input type="checkbox" id="medio_contacto" name="medio_contacto"><br>
+            <label id="forpag" for="forma_pago">Forma de pago:</label> <br>
+            <div id="radios">
+                <input type="radio" id="tarjeta" name="forma_pago" value="tarjeta" required> Tarjeta de crédito<br>
+                <input type="radio" id="efectivo" name="forma_pago" value="efectivo" required> Efectivo<br>
+                <input type="radio" id="transferencia" name="forma_pago" value="transferencia" required>
+                Transferencia<br>
+                <input type="radio" id="otro" name="forma_pago" value="otro" required> Otro<br>
+            </div><br>
+            <input id="btnEnviar" type="submit" value="Enviar">
+        </form><br>
+    </div>
 
     <footer>
     </footer>
 
     <script src="./js/validaciones.js"></script>
     <script src="./js/scripts.js"></script>
-    
+
 </body>
+
 </html>
