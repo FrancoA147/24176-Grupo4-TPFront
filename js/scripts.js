@@ -18,8 +18,8 @@ document.querySelector("header").innerHTML = `
     </ul>
 </nav>
 <div id="tel">Teléfono: +1 234 567 8900</div>
-`
 
+`
 /*document.querySelector("header").innerHTML=`
 <h1>Equipo 4</h1>
             <nav>
@@ -34,12 +34,12 @@ document.querySelector("footer").innerHTML=`
 <p>Seguinos en nuestras redes.</p>
 <nav>
     <a href=https://www.facebook.com target="_blank">
-        <img src="./imagenes/facebook.png" alt="logo de facebook" width="30px">
+        <img src="./imagenes/facebook.png" alt="logo de facebook" width="40px">
     </a>
     <a href=https://www.instagram.com target="_blank">
-        <img src="./imagenes/instagram.png" alt="logo de instagram" width="30px"></a>
+        <img src="./imagenes/instagram.png" alt="logo de instagram" width="40px"></a>
     <a href="https://web.whatsapp.com" target="_blank">
-        <img src="./imagenes/wsp.png" alt="logo de whatsapp" width="30px">
+        <img src="./imagenes/wsp.png" alt="logo de whatsapp" width="40px">
     </a>
 </nav>
 <br>
