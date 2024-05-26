@@ -1,0 +1,62 @@
+[
+  {
+    "imagen":"./imagenes/empanadas.jpg",
+    "nombre": "Empanadas",
+    "descripcion": "Carne, Pollo o Jamón y queso"
+  },
+    {
+      "imagen":"./imagenes/empArabes.jpg",
+      "nombre": "Empanadas",
+      "descripcion": "Arabes"
+  },
+  {
+    "imagen":"./imagenes/Hamb1.jpg",
+    "nombre": "Hamburguesa bomba",
+    "descripcion": "Doble carne con cheddar"
+  },
+  {
+    "imagen":"./imagenes/Hamb2.jpg",
+    "nombre": "Hamburguesa clásica",
+    "descripcion": "Con lechuga y tomate"
+  },
+  {
+    "imagen":"./imagenes/hamb3.jpg",
+    "nombre": "Hamburguesa especial",
+    "descripcion": "Con jamón, queso, huevo, lechuga y tomate"
+  },
+  {
+    "imagen":"./imagenes/HambDoble.jpg",
+    "nombre": "Clásica doble",
+    "descripcion": "Doble carne, lechuga y tomate"
+  },
+  {
+    "imagen":"./imagenes/hambGuacamole.jpg",
+    "nombre": "Hamburguesa Mexicana",
+    "descripcion": "Super especial con guacamole"
+  },
+  {
+    "imagen":"./imagenes/Pizza1.jpg",
+    "nombre": "Pizza Muzza",
+    "descripcion": "Clásica de muzzarella"
+  },
+  {
+    "imagen":"./imagenes/pizza2.jpg",
+    "nombre": "Pizza Pepperoni",
+    "descripcion": "Con muzzarella y pepperoni"
+  },
+  {
+    "imagen":"./imagenes/pizza3.jpg",
+    "nombre": "Pizza napolitana",
+    "descripcion": "Con rodajas de tomate y hojas de albahaca"
+  },
+  {
+    "imagen":"./imagenes/pizza4.jpg",
+    "nombre": "Pizza especial",
+    "descripcion": "Muzzarela, jamón, morrones y aceitunas"
+  },
+  {
+    "imagen":"./imagenes/pizza5.jpg",
+    "nombre": "Hawaiana",
+    "descripcion": "Con rodajas de ananá y cerezas"
+  }
+]
